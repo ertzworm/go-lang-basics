@@ -5,7 +5,7 @@ import ("io/ioutil"
 				"net/http"
 )
 
-//@ Translates responses from http requests
+//@ TRANSLATES RESPONSES FROM HTTP REQUESTS
 func TranslateResponse(response *http.Response) []uint8 {
 	defer response.Body.Close()
 	body, err := ioutil.ReadAll(response.Body)
